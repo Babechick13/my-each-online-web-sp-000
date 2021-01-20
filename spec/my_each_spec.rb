@@ -6,7 +6,7 @@
 
     my_each(words) do |word|
       puts word
-@@ -15,16 +15,20 @@
+
 
   it "can handle an empty collection" do
     empty_array = []
