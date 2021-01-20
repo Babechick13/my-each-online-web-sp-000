@@ -32,8 +32,10 @@ describe "my_each" do
     expect(my_each(tas) do |ta|
       puts "#{ta} is awesome"
     
-    end.should == tas
-    end).to eq(tas)
+  end
+   .should == tas
+    ).to eq(tas)
+   end
   end
 end
 end 
