@@ -1,4 +1,7 @@
- words = ['hi', 'hello', 'bye', 'goodbye']
+require_relative 'spec_helper'
+describe "my_each" do
+  it "iterates over each element" do
+    words = ['hi', 'hello', 'bye', 'goodbye']
 
     # This line tests that each word gets printed out by the loop!
     $stdout.should_receive(:puts).exactly(words.length)
@@ -6,7 +9,6 @@
 
     my_each(words) do |word|
       puts word
-
 
   it "can handle an empty collection" do
     empty_array = []
@@ -29,9 +31,8 @@
     my_each(tas) do |ta|
     expect(my_each(tas) do |ta|
       puts "#{ta} is awesome"
+    
     end.should == tas
-    
-    
     end).to eq(tas)
   end
 end
